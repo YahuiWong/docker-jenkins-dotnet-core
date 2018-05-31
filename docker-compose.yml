@@ -1,0 +1,16 @@
+version: '1'
+services:
+  jenkins-core:
+    #image: oomusou/jenkins-core
+    build: ./
+    ports:
+      - 8080:8080
+      - 50000:50000
+    # uncomment for docker in docker
+    privileged: true
+    volumes:
+        # enable persistent volume (warning: make sure that the local jenkins_home folder is created)
+        - ./jenkins_home:/var/jenkins_home
+        # mount docker sock and binary for docker in docker (only works on linux)
+        - ./run/docker.sock:/var/run/docker.sock
+        - ./bin/docker:/usr/bin/docker
