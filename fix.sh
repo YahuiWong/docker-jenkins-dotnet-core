@@ -1,1 +1,0 @@
-sudo chown 1000 jenkins_home
