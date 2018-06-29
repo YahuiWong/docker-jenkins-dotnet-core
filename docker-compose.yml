@@ -1,8 +1,8 @@
 version: '2'
 services:
   jenkins-core:
-    #image: oomusou/jenkins-core
-    build: ./
+    image: yahuiwong/jenkins-dotnet-core:2.1.4
+    #build: ./
     ports:
       - 8080:8080
       - 50000:50000
