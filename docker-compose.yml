@@ -4,7 +4,7 @@ services:
     image: yahuiwong/jenkins-dotnet-core:2.1.4
     #build: ./
     ports:
-      - 8080:8080
+      - 8180:8080
       - 50000:50000
     # uncomment for docker in docker
     privileged: true
