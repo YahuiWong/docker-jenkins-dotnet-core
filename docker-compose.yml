@@ -3,6 +3,8 @@ services:
   jenkins-core:
     image: yahuiwong/jenkins-dotnet-core:2.1.4
     #build: ./
+    environment:
+      - JAVA_OPTS=-Dorg.apache.commons.jelly.tags.fmt.timeZone=Asia/Shanghai 
     ports:
       - 8180:8080
       - 50000:50000
