@@ -1,8 +1,8 @@
 version: '2'
 services:
   jenkins-core:
-    image: yahuiwong/jenkins-dotnet-core:2.1
-    #build: ./
+    # image: yahuiwong/jenkins-dotnet-core:2.1
+    build: .
     environment:
       - JAVA_OPTS=-Dorg.apache.commons.jelly.tags.fmt.timeZone=Asia/Shanghai 
     ports:
