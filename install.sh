@@ -14,4 +14,4 @@ chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 
 apt-get update
-apt-get install dotnet-sdk-2.1
+apt-get install -y dotnet-sdk-2.1
