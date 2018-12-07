@@ -15,3 +15,4 @@ chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 
 apt-get update
 apt-get install -y dotnet-sdk-2.2
+apt-get clean
